@@ -4,7 +4,7 @@ published: true
 ---
 
 <div class="posts">
- 		<section class="intro-section">
+ 				<section class="intro-section">
 			<div class="intro-container">
 				<h1>Introduction</h1>
 				<p>
@@ -41,7 +41,11 @@ published: true
 						<li>
 							Then, type npx create-react-app app-name to create a
 							new react app. It may take a few minutes to setup.
-							<img src="images/create-react-app.png" alt="Create react app image text" />
+							<img
+								class="img-general"
+								src="./Blog Images/gettingstarted/createreactapp.png"
+								alt="Image goes here"
+							/>
 						</li>
 					</ol>
 					<div class="gettingstarted-output-container">
@@ -49,7 +53,10 @@ published: true
 							You will see something like this on your terminal
 							screen.
 						</h5>
-						<img src="images/create-react-app.png" alt="Image goes here" />
+						<img
+							src="./Blog Images/gettingstarted/Happy hacking.png"
+							alt="Image goes here"
+						/>
 						<p>
 							Hurrah! You got this. Now write cd app-name to go to
 							the folder directory and write npm start. Don’t
@@ -83,7 +90,10 @@ published: true
 					it.
 				</p>
 				<p>Now just write Hello World in h1 tag. Like this.</p>
-				<img src="" alt="Image goes here" />
+				<img
+					src="./Blog Images/helloworld/2.png"
+					alt="Image goes here"
+				/>
 				<p>
 					Save it and check the browser, Hello World is now printed on
 					the web page. We have made our first React App. But don’t
@@ -132,7 +142,7 @@ published: true
 					Enough theory. Let’s write some code to get a practical idea
 					about JSX.
 				</p>
-				<img src="" alt="Image goes here" />
+				<img src="./Blog Images/jsx/2.png" alt="Image goes here" />
 			</div>
 		</section>
 		<section class="components">
@@ -165,12 +175,18 @@ published: true
 						Create a new component Greet.jsx in the source folder.
 						And write a greet program.
 					</p>
-					<img src="" alt="Image goes here" />
+					<img
+						src="./Blog Images/components/1.png"
+						alt="Image goes here"
+					/>
 					<h5>
 						How to use the Greet component in the App component?
 					</h5>
 					<p>Import the <Greet /> component and use it like this</p>
-					<img src="" alt="Imoprting the compoennt like this" />
+					<img
+						src="./Blog Images/components/2.png"
+						alt="Imoprting the compoennt like this"
+					/>
 					<p class="tip">
 						&lt;/&gt; is convention used to for &lt;&gt; &lt;/&gt;.
 					</p>
@@ -183,7 +199,10 @@ published: true
 						New and preferred way of writing components. Same as
 						normal JS functions.
 					</p>
-					<img src="" alt="functional components" />
+					<img
+						src="./Blog Images/components/3.png"
+						alt="functional components"
+					/>
 					<p>Clean and simple.</p>
 					<p class="note">
 						Note: All the progams will be written in function based
@@ -193,7 +212,10 @@ published: true
 				<div class="components-class-container">
 					<h3>Class</h3>
 					<p>Follows a class based writing approach.</p>
-					<img src="" alt="class components" />
+					<img
+						src="./Blog Images/components/4.png"
+						alt="class components"
+					/>
 				</div>
 			</div>
 		</section>
@@ -220,17 +242,17 @@ published: true
 					Learning this kind of library needs hands on practice rather
 					than memorising the theory. Let’s write some code then.
 				</p>
-				<img src="" alt="Image goes here" />
+				<img src="./Blog Images/props/1.png" alt="Image goes here" />
 				<p>
 					Passing the name and message to the &lt;Greet/&gt;
 					component.
 				</p>
-				<img src="" alt="Image goes here" />
+				<img src="./Blog Images/props/2.png" alt="Image goes here" />
 				<p class="important">
 					&lt;Greet/&gt; component will receive the props as a JSON
 					object like this.
 				</p>
-				<img src="" alt="Image goes here" />
+				<img src="./Blog Images/props/4.png" alt="Image goes here" />
 				<p>
 					Now, &lt;Greet/&gt; can use the values of name and message
 					and use it throughout the component.
@@ -258,7 +280,10 @@ published: true
 					mention proptypes, like name must be a string, If a string
 					is not passed, it will throw an error.
 				</p>
-				<img src="" alt="Default props and proptypes" />
+				<img
+					src="./Blog Images/props/3.png"
+					alt="Default props and proptypes"
+				/>
 			</div>
 		</section>
 		<section class="architecture">
@@ -273,7 +298,10 @@ published: true
 			</div>
 			<div class="architecture-folder-structure-container">
 				<h3>Folder Structure</h3>
-				<img src="" alt="Folder structure" />
+				<img
+					src="./Blog Images/architecture/1.png"
+					alt="Folder structure"
+				/>
 				<h4>Entry file: index.js</h4>
 				<p>
 					Responsible to load the App component in the index.html
@@ -338,10 +366,10 @@ published: true
 			</div>
 			<div class="stateandhooks-usage-container">
 				<h3>Usage</h3>
-				<img src="" alt="" />
-				<img src="" alt="" />
-				<img src="" alt="" />
-				<img src="" alt="" />
+				<img src="./Blog Images/stateandhooks/1.png" alt="" />
+				<img src="./Blog Images/stateandhooks/2.png" alt="" />
+				<img src="./Blog Images/stateandhooks/3.png" alt="" />
+				<img src="./Blog Images/stateandhooks/4.png" alt="" />
 				<p>
 					Felt amazed? Using states you can manage a large application
 					in an efficient way. But the only way to update the state in
@@ -352,4 +380,53 @@ published: true
 				<p>Correct way: setName(“New Name”)</p>
 			</div>
 		</section>
-</div>
+		<section class="lifecycle">
+			<div class="lifecycle-intro-container">
+				<h1>React lifecycle</h1>
+				<p class="note">
+					In this blog, we will discuss the React Lifecycle with Hooks
+					as we are not covering the class based components.
+				</p>
+				<p>
+					Remeber we discussed about Hooks. One of the most commonly
+					used hooks is <strong>useEffect</strong> hook.
+				</p>
+				<p>
+					useEffect hook is basically an advanced function that is the
+					combination of 3 different functions from class based
+					components. They are componentDidMount, componentDidUpdate ,
+					componentWillUnmount will run after the component renders.
+				</p>
+				<p>
+					It takes 2 arguments. First is the callback function that
+					runs after every render of the component exactly how the
+					componentDidMount function works. Second argument is call
+					effect dependency parameter. By default useEffect runs after
+					every render and every update of the component. But if we
+					want it to be fired only when some particular state value
+					changes, then we can pass that state value in dependency
+					array.
+				</p>
+			</div>
+			<div class="lifecycle-usage-container">
+				<h3>Usage:</h3>
+				<p>
+					useEffect is most commonly used for fetching data from the
+					backend and storing it to a state variable.
+				</p>
+				<p>
+					Let’s write a program that fetches a fake JSON data from an
+					API and stores it into a state variable.
+				</p>
+				<img src="./Blog Images/lifecycle/1.png" alt="" />
+				<p>
+					Now, what if we want to run useEffect on a particular event
+					change. We can do something like this.
+				</p>
+				<img src="./Blog Images/lifecycle/2.png" alt="" />
+				<p>
+					This will fire the useEffect whenever the state ‘data’
+					changes.
+				</p>
+			</div>
+		</section>
