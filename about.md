@@ -10,7 +10,7 @@ I am Harshit Patel. A student who has been doing programming for 3 years now.
 
 ### More Information
 
-
+Like to solve problems. Not personal though😂
 
 
 ### Contact me
