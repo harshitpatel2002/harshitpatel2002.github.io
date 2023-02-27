@@ -2,14 +2,18 @@
 layout: page
 title: About
 permalink: /about/
+published: true
 ---
 
-Some information about you!
+I am Harshit Patel. A student who has been doing programming for 3 years now.
+
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+
+
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[harshit.patel@edu.sait.ca](mailto:harshit.patel@edu.sait.ca
+)
