@@ -4,7 +4,7 @@ published: true
 ---
 
 <div class="posts">
-  		<section class="intro-section">
+ 		<section class="intro-section">
 			<div class="intro-container">
 				<h1>Introduction</h1>
 				<p>
@@ -135,5 +135,221 @@ published: true
 				<img src="" alt="Image goes here" />
 			</div>
 		</section>
-		<section class="components"></section>
+		<section class="components">
+			<div class="components-intro-container">
+				<h1>Components</h1>
+				<p>
+					Components are a piece of code that you can use repeatedly
+					if you want.
+				</p>
+			</div>
+			<div class="components-about-container">
+				<p>
+					React follows the pattern of using component so that if
+					changes need to be made, we just have to do it once. Also,
+					components like Navbar and Footer can be re-use in every
+					page. It increases the readability. Whenever you need the
+					component, you can load it over there.
+				</p>
+				<p>JSX components follows Pascal convention.</p>
+				<p>How to make components and render them?</p>
+			</div>
+			<div class="component-program-container">
+				<h2>Task:</h2>
+				<p>
+					Create a component that greets Good Morning with user’s name
+					and load it into &lt;App&gt; component.
+				</p>
+				<div class="component-program-solution-container">
+					<p>
+						Create a new component Greet.jsx in the source folder.
+						And write a greet program.
+					</p>
+					<img src="" alt="Image goes here" />
+					<h5>
+						How to use the Greet component in the App component?
+					</h5>
+					<p>Import the <Greet /> component and use it like this</p>
+					<img src="" alt="Imoprting the compoennt like this" />
+					<p class="tip">
+						&lt;/&gt; is convention used to for &lt;&gt; &lt;/&gt;.
+					</p>
+				</div>
+			</div>
+			<div class="components-type-container">
+				<div class="components-functional-container">
+					<h3>Functional</h3>
+					<p>
+						New and preferred way of writing components. Same as
+						normal JS functions.
+					</p>
+					<img src="" alt="functional components" />
+					<p>Clean and simple.</p>
+					<p class="note">
+						Note: All the progams will be written in function based
+						structure.
+					</p>
+				</div>
+				<div class="components-class-container">
+					<h3>Class</h3>
+					<p>Follows a class based writing approach.</p>
+					<img src="" alt="class components" />
+				</div>
+			</div>
+		</section>
+		<section class="props">
+			<div class="props-intro-container">
+				<h2>What are props?</h2>
+				<p>
+					Props are nothing but short of properties. You can pass some
+					properties to a component when you call it. The component
+					will take all the props and can use those values where it
+					wants.
+				</p>
+				<p>
+					Props can be passed as a plain text or as any JS variables
+					such as Integer, Object, Boolean etc.
+				</p>
+				<p>
+					The other component will receive these props in a props JSON
+					object.
+				</p>
+			</div>
+			<div class="props-usage-container">
+				<p>
+					Learning this kind of library needs hands on practice rather
+					than memorising the theory. Let’s write some code then.
+				</p>
+				<img src="" alt="Image goes here" />
+				<p>
+					Passing the name and message to the &lt;Greet/&gt;
+					component.
+				</p>
+				<img src="" alt="Image goes here" />
+				<p class="important">
+					&lt;Greet/&gt; component will receive the props as a JSON
+					object like this.
+				</p>
+				<img src="" alt="Image goes here" />
+				<p>
+					Now, &lt;Greet/&gt; can use the values of name and message
+					and use it throughout the component.
+				</p>
+				<p class="note">
+					You must use the same name that were used while passing the
+					props.
+				</p>
+				<p>
+					Yayy! Now you can use the <Greet /> component to greet
+					different people. Just pass different props every time.
+				</p>
+				<p class="note">
+					You cannot change the value of props. They are read-only. I
+					know you are wondering that they may be some instances when
+					the UI will change. Yeah we do have something spicy for that
+					later on.
+				</p>
+			</div>
+			<div class="defprops-proptypes-container">
+				<h3>Default Props and Proptypes</h3>
+				<p>
+					One can assign default props, if the component did not
+					receive that prop, it will use the default one. Also, we can
+					mention proptypes, like name must be a string, If a string
+					is not passed, it will throw an error.
+				</p>
+				<img src="" alt="Default props and proptypes" />
+			</div>
+		</section>
+		<section class="architecture">
+			<div class="architecture-intro-container">
+				<h1>React Architecture</h1>
+				<p>
+					I am sure you were waiting for this. I know that without
+					being familiar with the environment, things are not clear to
+					us. So let’s understand how React works and will go thorough
+					the folder structure as well.
+				</p>
+			</div>
+			<div class="architecture-folder-structure-container">
+				<h3>Folder Structure</h3>
+				<img src="" alt="Folder structure" />
+				<h4>Entry file: index.js</h4>
+				<p>
+					Responsible to load the App component in the index.html
+					file. All the components don’t matter already made by React
+					for us or you create must be place in the source folder. You
+					may put in some directory to make things organise but it
+					should be in the src folder.
+				</p>
+				<p>
+					When the application starts. Index.js target the div with
+					class ‘root’ present in the index.html file and loads the
+					App component in that div.
+				</p>
+				<p>
+					You must be wondering why we do all these things when we can
+					create different .html files and send them to the browser.
+					But the disadvantage in that is every time a browser request
+					for a page, server will send the whole html page which can
+					take much bandwidth.
+				</p>
+				<p>
+					Instead, what React developers thought, we will keep only
+					one .html file and we will manipulate the content according
+					to the UI we need. So now, JS is responsible for changing
+					the UI. This is the reason why page doesn’t get refresh.
+					Because browser is not making any other requests. On the
+					very first request, it took the .html file and now we are
+					just changing the data of the file however we need.
+				</p>
+				<p>
+					Isn’t that beautiful. Now the process will be much faster.
+				</p>
+			</div>
+		</section>
+		<section class="stateandhooks">
+			<div class="stateandhooks-intro-container">
+				<h3>What is a State?</h3>
+				<p>
+					Remember, I have told before that we have something spicy
+					for storing values. Let's discuss the spicyness of React
+					state.
+				</p>
+				<p>
+					State is nothing but the current appearance or position of a
+					component
+				</p>
+				<p>
+					In react, we can use state when we know at some point the
+					state of that component will be changed.
+				</p>
+				<p>
+					In function-based components, we have hooks to manage state.
+					Now you must be wondering what are
+					<strong>hooks</strong> now.
+				</p>
+				<p>
+					<strong>Hooks</strong> were included in React 16.8. They
+					help us to manage to state in functional components. There
+					are a bunch of Hooks present in React library. Hook for
+					using state in functional components is useState.
+				</p>
+			</div>
+			<div class="stateandhooks-usage-container">
+				<h3>Usage</h3>
+				<img src="" alt="" />
+				<img src="" alt="" />
+				<img src="" alt="" />
+				<img src="" alt="" />
+				<p>
+					Felt amazed? Using states you can manage a large application
+					in an efficient way. But the only way to update the state in
+					the functional component is by its setter method.
+				</p>
+				<p>const [name, setName] = useState(‘’);</p>
+				<p>We cannot do something like this. Name = “New Name”</p>
+				<p>Correct way: setName(“New Name”)</p>
+			</div>
+		</section>
 </div>
