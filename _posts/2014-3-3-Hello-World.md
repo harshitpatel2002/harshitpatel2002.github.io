@@ -5,5 +5,3 @@ published: true
 ---
 
 ## Hello World
-
-
